@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Geist } from "next/font/google";
 import "./globals.css";
-import GlowEffect from "@/components/ui/GlowEffect";
 import { cn } from "@/lib/utils";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
@@ -25,7 +24,6 @@ export default function RootLayout({
   return (
     <html lang="fr" className={cn("font-sans", geist.variable)}>
       <body className={`${poppins.variable} font-sans antialiased`}>
-        <GlowEffect />
         {children}
       </body>
     </html>
